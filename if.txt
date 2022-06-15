@@ -1,0 +1,31 @@
+<html>
+<body>
+<scrit>
+function result()
+{
+    if(document.getElementById("1").value==document.getElementById("2").value)
+       {  
+              document.getElementById("res").value= "both are equal";
+       }
+    else if(document.getElementById("1").value>document.getElementById("2").value)
+       {
+              document.getElementById("res").value= "first nuber is greater than second number";
+       }
+    else if(document.getElementById("1").value<document.getElementById("2").value)
+       {
+               document.getElementById("res").value= "second number is greaterthan first number";
+       }
+       else
+       {
+               document.getElementById("res").value="imaginary number";
+       }
+}
+           
+</script>
+
+first number:<input type="text" id="1"><br><br>
+second number:<input type="text" id="2"><br><br>
+<button type="button" onclick="result()">show</button><br><br>
+relation:<input type="text"id="res" max size="40">
+</body>
+</html>
